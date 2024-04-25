@@ -1,0 +1,11 @@
+{% extends "mainapp/base.html" %}
+
+{% block title %}
+    {{ client.name }}
+{% endblock %}
+
+{% block context %}
+    {% for order in orders %}
+        <a href=''>{{ order.name }}</a><br>
+    {% endfor %}
+{% endblock %}
